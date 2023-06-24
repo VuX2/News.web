@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>W website</title>
+    
+        <!----------link_css---------->
+        <link rel="stylesheet" href="./css/main.css">
+    
+        <!----------link_font---------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+        <!----------link_icon---------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!----------link_favicon---------->
+        <link rel="shortcut icon" type="image/jpg" href="./imgs/favicon.png"/>
+    
+    </head>
+<body>
+    
+    <div id="wrap">
+        <header>
+            <div class="logo">
+                
+                <a href="index.html"><h1>TINTUC.VN</h1></a>
+            </div>
+            <div class="btn"><i id="icon" class="fa-solid fa-moon"></i></div>
+        </header>
+
+        <nav class="pc">
+            <div id="pc">
+                <div class="tool">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#wall">Wallpapers</a></li>
+                        <li><a href="https://me.momo.vn/AEI9TgsgCRFRu2IPU6CaCP">Donate</a></li>
+                        <li><a onclick="logout()"  class="child" href="signup.html">Log In</a></li>
+                    </ul>
+                </div>
+                
+                <div id="user" class="username">Chưa Đăng Nhập</div>
+            </div>
+        </nav>
+
+        <label id="btn-mob" for="nav-mob-input">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" class="nav-check" id="nav-mob-input">
+        <label for="nav-mob-input" class="overlay"></label>
+        <nav class="tool-mob">
+            <label for="nav-mob-input" class="time">
+                <i class="fa-regular fa-x"></i>
+            </label>
+            <ul class="nav-list-mob">
+                <li><a href="index.html" class="a-mob"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#news" class="a-mob"><i class="fa-solid fa-newspaper"></i>News</a></li>
+                <li><a href="#wall" class="a-mob"><i class="fa-solid fa-desktop"></i>Wallpapers</a></li>
+                <li><a href="https://me.momo.vn/AEI9TgsgCRFRu2IPU6CaCP" class="a-mob"><i class="fa-solid fa-circle-dollar-to-slot"></i>Donate</a></li>
+                <li><a href="signup.html" class="a-mob" id="mobs"><i class="fa-solid fa-address-card"></i>Log In</a></li>
+            </ul>
+
+            
+        </nav>
+
+        <div id="banner">
+            <a href="https://4kwallpapers.com/technology/apple-logo-purple-11171.html"><img src="./imgs/banner.png" alt=""></a>
+        </div>
+
+        <article id="news">
+            <h3>NEWS</h3>
+            <div class="box-news">
+                <div class="news">
+                    <a href="https://gvn360.com/cong-nghe/corsair-cach-mang-hoa-viec-build-pc-voi-he-sinh-thai-linh-kien-thong-minh-icue-link/">
+                        <h4>CORSAIR cách mạng hóa việc build PC với hệ sinh thái linh kiện thông minh iCUE LINK</h4>
+                        <img src="./imgs/news1.jpg" alt="">
+                        <p>Với hệ thống iCUE LINK của Corsair, game thủ giờ đây sẽ có thể ráp dàn PC gaming dễ dàng hơn rất nhiều. CORSAIR chính thức công bố hệ sinh...</p>
+                    </a>
+                </div>
+                
+                <div class="news">
+                    <a href="https://gvn360.com/cong-nghe/epson-ra-mat-may-in-trang-den-moi-phuc-vu-nhu-cau-in-an-cho-doanh-nghiep-vua-va-nho/">
+                        <h4>Epson ra mắt máy in trắng đen mới, phục vụ nhu cầu in ấn cho doanh nghiệp vừa và nhỏ</h4>
+                        <img src="./imgs/news2.jpg" alt="">
+                        <p>Epson bổ sung các dòng máy in trắng đen mới với giá thành đa dạng để đáp ứng được mọi nhu cầu in ấn từ doanh nghiệp vừa và...</p>
+                    </a>
+                </div>
+
+                <div class="news" class="news" id="last-news">
+                    <a href="https://gvn360.com/cong-nghe/ai-biet-rat-nhieu-nhung-lai-khong-biet-moi-ngon-ngu-va-day-la-ly-do-vi-sao/">
+                        <h4>AI biết rất nhiều nhưng lại không biết mọi ngôn ngữ, và đây là lý do vì sao</h4>
+                        <img src="./imgs/news6.jpg" alt="">
+                        <p>AI có thể học hết tất cả các ngôn ngữ trên thế giới, nhưng chưa chắc nó sẽ làm như thế. Các mô hình ngôn ngữ (language model) như GPT-3,...</p>
+                    </a>
+                </div>
+
+                <div class="news">
+                    <a href="https://gvn360.com/cong-nghe/apple-trinh-lang-kinh-thuc-te-ao-tang-cuong-vision-pro-mo-ban-dau-nam-2024-voi-gia-3499-do/">
+                        <h4>Apple trình làng kính thực tế ảo tăng cường Vision Pro, mở bán đầu năm 2024 với giá 3499 đô</h4>
+                        <img src="./imgs/news4.jpg" alt="">
+                        <p>Sau nhiều năm trì hoãn thì cuối cùng Apple cũng có bước đi đầu tiên trong mảng kính AR với chiếc Vision Pro. Apple vừa mới công bố...</p>
+                    </a>
+                </div>
+
+                <div class="news">
+                    <a href="https://gvn360.com/cong-nghe/ea-da-tu-chung-minh-minh-sai-game-single-player-van-mai-dinh/">
+                        <h4>EA đã tự chứng minh mình sai, game Single Player vẫn mãi đỉnh của chóp</h4>
+                        <img src="./imgs/news5.jpg" alt="">
+                        <p>Game theo dạng dịch vụ trực tuyến đang là xu hướng, nhưng EA đã “giác ngộ” và nhận ra rằng game single player nếu được đầu tư đúng mực...</p>
+                    </a>
+                </div>
+
+                <div class="news" id="last-news">
+                    <a href="https://gvn360.com/cong-nghe/corsair-cong-bo-ram-dominator-titanium-ddr5-voi-hieu-nang-manh-me-cung-net-dep-tinh-te/">
+                        <h4>CORSAIR công bố RAM DOMINATOR TITANIUM DDR5 với hiệu năng mạnh mẽ cùng nét đẹp tinh tế</h4>
+                        <img src="./imgs/news3.jpg" alt="">
+                        <p>Dòng RAM Corsair DOMINATOR TITANIUM DDR5 vừa sở hữu hiệu năng mạnh mẽ, vừa có khả năng tùy biến thanh top bar cực đỉnh...</p>
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </article>
+
+        <article id="wall">
+            <h3>WALLPAPERS</h3>
+            <div class="box-news">
+                <div class="news">
+                    <a href="https://gvn360.com/hinh-nen/vi-ai-cung-can-desktop-an-tuong-moi-tai-bo-hinh-nen-tham-bien/">
+                        <h4>Vì ai cũng cần desktop ấn tượng, mời tải bộ hình nền thăm biển</h4>
+                        <img src="./imgs/wall1.jpg" alt="" style=" width: 220px;">
+                        <p>Bộ hình nền mà GVN 360 tụi mình muốn gửi tới cho các bạn ngày hôm nay có tên là thăm biển...</p>
+                    </a>
+                </div>
+                
+                <div class="news">
+                    <a href="https://gvn360.com/hinh-nen/vi-ai-cung-can-desktop-an-tuong-moi-tai-bo-hinh-nen-thanh-pho-tuong-lai-p-4/">
+                        <h4>Vì ai cũng cần desktop ấn tượng, mời tải bộ hình nền thành phố tương lai</h4>
+                        <img src="./imgs/wall2.jpg" alt="" style=" width: 220px;">
+                        <p>Bộ hình nền mà GVN 360 tụi mình muốn gửi tới các bạn ngày hôm nay có tên là thành phố tương lai...</p>
+                    </a>
+                </div>
+
+                <div class="news" id="last-news">
+                    <a href="https://gvn360.com/hinh-nen/vi-ai-cung-can-desktop-an-tuong-moi-tai-bo-hinh-nen-ngay-he-ruc-lua/">
+                        <h4>Vì ai cũng cần desktop ấn tượng, mời tải bộ hình nền ngày hè rực lửa</h4>
+                        <img src="./imgs/wall3.jpg" alt=""  style=" width: 220px;">
+                        <p>Bộ hình nền mà GVN 360 tụi mình muốn gửi tới các bạn ngày hôm nay có tên là ngày hè rực lửa...</p>
+                    </a>
+                </div>
+
+                <div class="news">
+                    <a href="https://gvn360.com/hinh-nen/hinh-nen-anime/vi-ai-cung-can-desktop-an-tuong-moi-tai-bo-hinh-nen-hoang-hon-ruc-ro/">
+                        <h4>Vì ai cũng cần desktop ấn tượng, mời tải bộ hình nền hoàng hôn rực rỡ</h4>
+                        <img src="./imgs/wall4.jpg" alt="" style=" width: 220px;">
+                        <p>Bộ hình nền mà GVN 360 tụi mình muốn gửi tới các bạn ngày hôm nay có tên là hoàng hôn rực rỡ...</p>
+                    </a>
+                </div>
+
+                <div class="news">
+                    <a href="https://gvn360.com/hinh-nen/vi-ai-cung-can-desktop-an-tuong-moi-tai-bo-hinh-nen-ao-trang-tho-ngay/">
+                        <h4>Vì ai cũng cần desktop ấn tượng, mời tải bộ hình nền áo trắng thơ ngây</h4>
+                        <img src="./imgs/wall5.jpg" alt="" style=" width: 220px;">
+                        <p>Bộ hình nền mà GVN 360 tụi mình muốn gửi tới các bạn ngày hôm nay có tên là áo trắng thơ ngây...</p>
+                    </a>
+                </div>
+
+                <div class="news" id="last-news">
+                    <a href="https://gvn360.com/hinh-nen/vi-ai-cung-can-desktop-an-tuong-moi-tai-bo-hinh-nen-ung-qua-chung/">
+                        <h4>Vì ai cũng cần desktop ấn tượng, mời tải bộ hình nền “ưng quá chừng”</h4>
+                        <img src="./imgs/wall6.jpg" alt=""  style=" width: 220px;">
+                        <p>Bộ hình nền mà GVN 360 tụi mình muốn gửi tới các bạn ngày hôm nay có tên là “ưng quá chừng”...</p>
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </article>
+
+
+        <footer>
+            <a href="#"><h1>TINTUC.VN</h1></a>
+            <div class="info">
+                <a href="https://www.facebook.com/profile.php?id=100083935237922" class="face"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://zalo.me/0357903551/" class="zalo"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://www.youtube.com/channel/UCgltb20gVxyFII4YJAz87-g" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discordapp.com/users/938812845288742952" class="discord"><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <p class="copy">@longvux 2023</p>
+        </footer>
+
+        <div onclick="scrUp()" class="scrollUp"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+    </div>
+
+    <script>
+        function scrUp() 
+        {
+            window.scrollTo(0,0);
+        }
+
+        var maxHeight = document.documentElement.scrollHeight * 0.74;
+        console.log(maxHeight);
+
+        var scroll = document.querySelector(".scrollUp");
+        window.addEventListener('scroll', function(){
+            
+            scroll.classList.toggle("on",window.scrollY > 300);
+        })
+        if(localStorage.getItem("acc")!==null){
+            const acc = localStorage.getItem("acc");
+            document.getElementById("user").innerHTML = "TK: " + acc;
+            document.querySelector(".child").innerHTML = "Log Out";
+            document.getElementById("mobs").innerHTML = '<i class="fa-solid fa-address-card"></i>Log Out';
+            // localStorage.removeItem("acc");
+        }
+        else{
+            document.getElementById("user").innerHTML = "Chưa đăng nhập";
+        }
+            // document.getElementById("user").innerHTML = "Chưa đăng nhập";
+    </script>
+</body>
+<script src="./js/darkmode.js"></script>
+</html>
